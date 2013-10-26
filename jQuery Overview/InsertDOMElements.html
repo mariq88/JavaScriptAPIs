@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="jquery-1.9.1.js"></script>
+    <style> 
+        div{
+            width:20px;
+            height: 20px;
+            border: 10px solid #8fcb0e;
+        }
+    </style>
+</head>
+<body>
+    <button id="before">Insert Before</button>
+    <button id="after">Insert After</button>
+   
+    <p id="element"></p>
+</body>
+<script>  
+    $("#before").click(function myfunction() {
+        $("<div></div>").insertBefore($("#element"));
+    })
+
+    $("#after").click(function myfunction() {
+        $("<div></div>").insertAfter($("#element"));
+    })
+</script>
+</html>

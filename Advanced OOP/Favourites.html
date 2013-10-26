@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Favourites</title>
+	<script type="text/javascript" src="js/Favourites.js"></script>
+	<script type="text/javascript" src="js/ClassicalCreate.js"></script>
+	<style>
+        #favoriteSiteBarContainer {
+            width: 400px;
+            border: 1px solid black;
+        }
+        a {
+            margin-left: 5px;
+        }
+        .FavoriteSiteBarParagraph {
+            width:100px;           
+            vertical-align:bottom;
+            padding-top:5px;
+            padding-left:5px;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+	<script>
+            var facebook = new URL("Facebook", "http://facebook.com/");
+            var telerik = new URL("Telerik", "http://www.telerik.com/");
+            var youtube = new URL("youtube", "http://www.youtube.com/");            
+            var favoriteSiteBar = new FavoriteSiteBar([telerik, facebook], [youtube, facebook]);
+            favoriteSiteBar.display();
+        </script>
+</body>
+</html>
